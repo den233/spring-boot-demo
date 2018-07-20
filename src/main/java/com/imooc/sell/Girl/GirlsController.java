@@ -1,11 +1,14 @@
 package com.imooc.sell.Girl;
 
+import org.json.JSONArray;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
+
 public class GirlsController {
     @Autowired
     private GirlsRepository GirlsRepository;
@@ -57,6 +60,7 @@ public class GirlsController {
 
     @PostMapping(value = "/girls/two")
     public void girlTwo(){
-        GirlsService.insertTwo();
+       GirlsService.insertTwo();
+
     }
 }
